@@ -9,7 +9,7 @@ import { UrlShortenerService } from '../url-shortener.service';
 export class UrlShortenerComponent {
   longUrl: string = '';
   shortUrl: string | null = null;
-  apiUrl = 'http://localhost:8080';
+  apiUrl = 'https://srtly.onrender.com';
 
   constructor(private urlShortenerService: UrlShortenerService) {}
 
