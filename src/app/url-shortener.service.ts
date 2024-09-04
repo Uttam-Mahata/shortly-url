@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class UrlShortenerService {
-  private apiUrl = 'http://localhost:8080/api/url';
+  private apiUrl = 'http://localhost:8080/srt/ly';
 
   constructor(private http: HttpClient) {}
 

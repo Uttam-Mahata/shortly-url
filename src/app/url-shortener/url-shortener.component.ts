@@ -9,12 +9,13 @@ import { UrlShortenerService } from '../url-shortener.service';
 export class UrlShortenerComponent {
   longUrl: string = '';
   shortUrl: string | null = null;
+  apiUrl = 'http://localhost:8080';
 
   constructor(private urlShortenerService: UrlShortenerService) {}
 
   shortenUrl() {
     this.urlShortenerService.shortenUrl(this.longUrl).subscribe(response => {
-      this.shortUrl = window.location.origin + '/' + response;
+      this.shortUrl = this.apiUrl + '/srt/ly/' + response;
     });
   }
 }
