@@ -15,7 +15,7 @@ export class UrlShortenerComponent {
 
   shortenUrl() {
     this.urlShortenerService.shortenUrl(this.longUrl).subscribe(response => {
-      this.shortUrl = this.apiUrl + '/srt/ly/' + response;
+      this.shortUrl = this.apiUrl + '/s/' + response;
     });
   }
 }

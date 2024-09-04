@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class UrlShortenerService {
-  private apiUrl = 'https://srtly.onrender.com/srt/ly';
+  private apiUrl = 'https://srtly.onrender.com/s';
 
   constructor(private http: HttpClient) {}
 
