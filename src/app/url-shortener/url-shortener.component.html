@@ -1,0 +1,18 @@
+<div class="url-shortener-container">
+    <h2>URL Shortener</h2>
+    
+    <form (ngSubmit)="shortenUrl()">
+      <mat-form-field class="full-width">
+        <mat-label>Enter Long URL</mat-label>
+        <input matInput [(ngModel)]="longUrl" name="longUrl" required>
+      </mat-form-field>
+      
+      <button mat-raised-button color="primary" type="submit">Shorten URL</button>
+    </form>
+  
+    <div *ngIf="shortUrl" class="short-url-result">
+      <p>Short URL:</p>
+      <a href="{{shortUrl}}" target="_blank">{{shortUrl}}</a>
+    </div>
+  </div>
+  
