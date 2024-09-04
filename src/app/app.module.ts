@@ -11,6 +11,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { UrlShortenerComponent } from './url-shortener/url-shortener.component';
 import { RedirectComponent } from './redirect/redirect.component';
+import {MatCard, MatCardContent, MatCardFooter, MatCardHeader, MatCardTitleGroup} from "@angular/material/card";
+import {MatDivider} from "@angular/material/divider";
 
 @NgModule({
   declarations: [
@@ -26,7 +28,13 @@ import { RedirectComponent } from './redirect/redirect.component';
     BrowserAnimationsModule,
     MatFormFieldModule,
     MatInputModule,
-    MatButtonModule
+    MatButtonModule,
+    MatCard,
+    MatCardHeader,
+    MatCardContent,
+    MatCardFooter,
+    MatCardTitleGroup,
+    MatDivider
   ],
   providers: [],
   bootstrap: [AppComponent]
